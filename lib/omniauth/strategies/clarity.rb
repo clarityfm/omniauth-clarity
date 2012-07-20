@@ -4,9 +4,9 @@ module OmniAuth
   module Strategies
     class Clarity < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        :site => 'http://api.clarity.dev:3001',
-        :authorize_url => 'http://clarity.dev:3001/oauth/authorize',
-        :token_url => 'http://clarity.dev:3001/oauth/authorize'
+        :site => 'https://api.clarity.fm',
+        :authorize_url => 'https://clarity.fm/oauth/authorize',
+        :token_url => 'https://clarity.fm/oauth/authorize'
       }
 
       def request_phase
